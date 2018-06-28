@@ -1,5 +1,5 @@
 let bipUsuario = document.getElementById("bipUsuario");
-let saldoBip = document.querySelector("#saldo");
+let saldoBip = parseInt(document.getElementById("saldo"));
 let fechaBip = document.querySelector("#fechaSaldo");
 let botonCargar = document.getElementById("cargarDatos");
 
@@ -7,21 +7,23 @@ let botonCargar = document.getElementById("cargarDatos");
 
 
 function cargar (){
-    //let bip = bipUsuario.value;
-    //console.log(bip)
-    //bipUsuario.value = "";
+    let bip = bipUsuario.value;
+    console.log(bip)
+    bipUsuario.value = "";
 
-    fetch(`http://www.psep.cl/api/Bip.php?&numberBip=666`)
+    fetch(`http://www.psep.cl/api/Bip.php?&numberBip=${bip}`)
     .then(response => response.json())
     .then(data => {
-        console.log(data["Estado de contrato"]);
-        //renderInfo(data);
+       // var trans = Object.values(data)
+        // console.log(trans);
+        console.log(data);
+        renderInfo(data);
     })
 }
-
-
-/*const renderInfo = data => {
-    saldoBip.innerHTML = data.Saldo;
-    fechaBip.innerHTML = data.Fecha;
+const renderInfo = data => {
+    datosUsuariosCargados.innerHTML = `
+    <p>Estado de Contrato: ${data['Estado de contrato']}</p>
+    <p>Saldo actual: ${data['Saldo  tarjeta']}</p>
+    <p>Fecha del Saldo: ${data['Fecha saldo']}</p>
+    `
 }
-*/
