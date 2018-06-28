@@ -1,1 +1,83 @@
-<!-- Wowowoyipiyouuu tu código acá -->
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <title>Consulta de Bip!</title>
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
+        crossorigin="anonymous">
+    <!-- Bootstrap CDN-->
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+<header>
+    <div class="topnav">
+        <div id="main">
+            <span onclick="openNav()">
+                <svg class="elipse"></svg>
+                <i class="fa fa-bars"></i>
+            </span>
+            </div>
+                <div id="topMenu" class="menuSuperior">
+                    <a id="titleTop">TRANS-LAB</a>
+                </div>
+    </div>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+            <i class="fas fa-times"></i>
+        </a>
+        <a class="sidenavText" href="#">
+            <i class="fa fa-user"></i> Ver Saldo</a>
+            <a class="sidenavText" href="#">
+            <i class="fas fa-table"></i> Calcular Tarifa</a>
+            <a class="sidenavText" href="#">
+            <i class="fas fa-cog"></i> Perfil</a>
+            <a class="sidenavText" href="#">
+            <i class="fas fa-cog"></i> Preguntas Frecuentes</a>
+            <a class="sidenavText" href="#">
+            <i class="fas fa-cog"></i> Home</a>
+    </div>
+</header>
+<section>
+        <div id="contenido">
+            <div class="container-fluid">
+                 <div class="row">
+                    <div class="col-12 text-center">
+                        <p >Ingrese número de tarjeta</p>
+                        <input id="bipUsuario" type="text">
+                        <button id"cargarDatos" onclick="cargar()" >Cargar</button>
+                        <p id="saldo"></p>
+                        <p id="fechaSaldo"></p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+
+
+</section>
+
+
+<footer>
+
+</footer>
+
+
+
+
+    <script src="js/indexnav.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
