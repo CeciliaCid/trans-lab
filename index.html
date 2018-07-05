@@ -1,8 +1,9 @@
-<html>
-
+<!DOCTYPE html>
+<html lang="en">
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Consulta de Bip!</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700,800" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt"
@@ -18,69 +19,71 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"></script>
     <link rel="stylesheet" href="css/style.css" />
 </head>
-
 <body>
-<header>
-    <div class="topnav">
-        <div id="main">
-            <span onclick="openNav()">
-                <svg class="elipse"></svg>
-                <i class="fa fa-bars"></i>
-            </span>
-            </div>
-                <div id="topMenu" class="menuSuperior">
-                    <a id="titleTop">TRANS-LAB</a>
+    <header>
+        <div class="topnav">
+            <div id="main">
+                <span onclick="openNav()">
+                    <svg class="elipse"></svg>
+                    <i class="fa fa-bars"></i>
+                </span>
                 </div>
-    </div>
-    <div id="mySidenav" class="sidenav">
-        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-            <i class="fas fa-times"></i>
-        </a>
-        <a class="sidenavText" href="#">
-            <i class="fa fa-user"></i> Ver Saldo</a>
+                    <div id="topMenu" class="menuSuperior">
+                        <a id="titleTop">TRANS-LAB</a>
+                    </div>
+        </div>
+        <div id="mySidenav" class="sidenav">
+            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
+                <i class="fas fa-times"></i>
+            </a>
             <a class="sidenavText" href="#">
-            <i class="fas fa-table"></i> Calcular Tarifa</a>
-            <a class="sidenavText" href="#">
-            <i class="fas fa-cog"></i> Perfil</a>
-            <a class="sidenavText" href="#">
-            <i class="fas fa-cog"></i> Preguntas Frecuentes</a>
-            <a class="sidenavText" href="#">
-            <i class="fas fa-cog"></i> Home</a>
-    </div>
-</header>
-<section>
-        <div id="contenido">
-            <div class="container-fluid">
-                 <div class="row">
-                    <div class="col-12 text-center">
-                        <p >Ingrese número de tarjeta</p>
-                        <input id="bipUsuario" type="text">
-                        <button id"cargarDatos" onclick="cargar()" >Cargar</button>
-                        <p id="saldo"></p>
-                        <div id="datosUsuariosCargados">
+                <i class="fa fa-user"></i> Ver Saldo</a>
+                <a class="sidenavText" href="#">
+                <i class="fas fa-table"></i> Calcular Tarifa</a>
+                <a class="sidenavText" href="#">
+                <i class="fas fa-cog"></i> Perfil</a>
+                <a class="sidenavText" href="#">
+                <i class="fas fa-cog"></i> Preguntas Frecuentes</a>
+                <a class="sidenavText" href="#">
+                <i class="fas fa-cog"></i> Home</a>
+        </div>
+    </header>
+    <section>
+            <div id="contenido">
+                <div class="container-fluid">
+                     <div class="row">
+                        <div class="col-12 text-center">
+                            <img src="docs/imagen.png" id="logo_img" alt="">
+                            <br>
+                            <h2 id="Titulo">TRANS-LAB</h2>
+                            <p >Ingrese Correo</p>
+                            <input id="inputCorreo" type="text" placeholder="Ingrese Correo">
+                            <p>Ingrese un Nombre de Usuario</p>
+                            <input id="inputNombre" type="text">
+                            <p>Ingrese una contraseña</p>
+                            <input id="inputContraseña" type="password">
+                                
+                            </div>
                             
                         </div>
-                        
                     </div>
                 </div>
             </div>
-        </div>
-
-
-
-
-</section>
-
-
-<footer>
-
-</footer>
-
-
-
-
-    <script src="js/indexnav.js"></script>
-    <script src="js/main.js"></script>
+    
+    
+    
+    
+    </section>
+    
+    
+    <footer>
+    
+    </footer>
+    
+    
+    
+    
+        <script src="js/indexnav.js"></script>
+        <script src="js/main.js"></script>
 </body>
-
 </html>

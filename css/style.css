@@ -96,3 +96,11 @@ body {
     margin-top: 100px;
     margin-bottom: 10px;
 }
+
+#logo_img{
+    width: 50%;
+    padding: 10px;
+}
+#Titulo{
+    color: orange;
+}
