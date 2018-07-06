@@ -20,33 +20,7 @@
     <link rel="stylesheet" href="css/style.css" />
 </head>
 <body>
-    <header>
-        <div class="topnav">
-            <div id="main">
-                <span onclick="openNav()">
-                    <svg class="elipse"></svg>
-                    <i class="fa fa-bars"></i>
-                </span>
-                </div>
-                    <div id="topMenu" class="menuSuperior">
-                        <a id="titleTop">TRANS-LAB</a>
-                    </div>
-        </div>
-        <div id="mySidenav" class="sidenav">
-            <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                <i class="fas fa-times"></i>
-            </a>
-            <a class="sidenavText" href="#">
-                <i class="fa fa-user"></i> Ver Saldo</a>
-                <a class="sidenavText" href="#">
-                <i class="fas fa-table"></i> Calcular Tarifa</a>
-                <a class="sidenavText" href="#">
-                <i class="fas fa-cog"></i> Perfil</a>
-                <a class="sidenavText" href="#">
-                <i class="fas fa-cog"></i> Preguntas Frecuentes</a>
-                <a class="sidenavText" href="#">
-                <i class="fas fa-cog"></i> Home</a>
-        </div>
+    <header>       
     </header>
     <section>
             <div id="contenido">
@@ -55,15 +29,17 @@
                         <div class="col-12 text-center">
                             <img src="docs/imagen.png" id="logo_img" alt="">
                             <br>
-                            <h2 id="Titulo">TRANS-LAB</h2>
-                            <p >Ingrese Correo</p>
-                            <input id="inputCorreo" type="text" placeholder="Ingrese Correo">
-                            <p>Ingrese un Nombre de Usuario</p>
-                            <input id="inputNombre" type="text">
-                            <p>Ingrese una contraseña</p>
-                            <input id="inputContraseña" type="password">
-                                
+                            <h2 id="titulo">TRANS-LAB</h2>
+                            <div id="iniciarSesion">
+                                <input class="inputInfo" id="inputCorreo" type="email" required="required" placeholder="Correo Electronico">
+
+                                <input class="inputInfo" id="inputContraseña" type="password" required="required" placeholder="Contraseña">
+                                <a href="opciones.html"> <button onclick="entrar()" class="botonIniciar" >INICIAR SESIÓN</button></a>
                             </div>
+                            <br>
+                            <p>¿Olvidaste tu Contraseña?</p>
+                            <p>¿NO TIENES CUENTA? <b>REGÍSTRATE</b></p>
+                        </div>
                             
                         </div>
                     </div>

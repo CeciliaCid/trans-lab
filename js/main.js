@@ -27,3 +27,38 @@ const renderInfo = data => {
     <p>Fecha del Saldo: ${data['Fecha saldo']}</p>
     `
 }
+
+///////////////////////////////////////////////////////////////
+
+function loginUser(){
+    if((document.getElementById("inputCorreo").value === "")||(document.getElementById("inputContraseña").value === "")){
+        alert ("No puedes dejar campos vacios")
+
+}else{
+    let email = document.getElementById("inputCorreo").value;
+    let contraseña = document.getElementById("inputContraseña").value;
+    localStorage.setItem(email, contraseña);
+}
+}
+
+function imprimirEmail(){
+    document.getElementById("datosUsuariosCargados").innerHTML = "";
+    for(let i=0; i < localStorage.length; i++){
+        let email = localStorage.key(i);
+        let emailTexto = localStorage.getItem(email);
+        datosUsuariosCargados.innerHTML = `
+        <p> Bienvenido: ${emailTexto} <p>
+        `
+    }
+}
+
+function entrar(){
+    if(typeof(Storage) !== "undefined"){
+        loginUser();
+        imprimirEmail();
+        document.getElementById("inputCorreo").value = "";
+    }else{
+        alert("Lo sentimos, el web storage no tiene soporte :( ")
+    }
+}
+
